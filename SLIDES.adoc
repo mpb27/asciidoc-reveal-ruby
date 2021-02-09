@@ -1,0 +1,297 @@
+// .admonitions-font
+// :include: //div[@class="slides"]
+// :header_footer:
+
+//
+// https://docs.asciidoctor.org/reveal.js-converter/latest/converter/syntax/layout/
+//
+//
+//
+
+
+:backend: revealjs
+:icons: font
+:docinfo: shared
+//:revealjs_theme: solarized
+//:revealjs_theme: moon
+:revealjs_slideNumber: true
+:source-highlighter: highlightjs
+:highlightjs-languages: asciidoc
+//:highlightjs-theme: a11y-dark.css
+:customcss: custom.css
+:revealjs_hash: true
+:revealjs_width: 1080
+
+
+= Concealed Slide Titles 123
+
+== !
+
+This
+
+[%notitle]
+== Presentation
+
+presentation's titles
+
+[source, asciidoc]
+----
+== Atom podium
+
+[data-medal=gold]
+. Protons
+
+[data-medal=silver]
+. Electrons
+
+[data-medal=bronze]
+. Neutrons
+----
+
+
+//
+// Slide 2 : How to create a 
+//
+== Hello
+
+[mermaid,abcd-flowchart,svg]
+....
+graph TD
+A[Hard] -->|Text| B(Round)
+B --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+....
+
+
+
+//
+// Slide 3:
+//
+== graph
+
+[graphviz]
+....
+digraph foo {
+  node [style=rounded]
+  node1 [shape=box]
+  node2 [fillcolor=yellow, style="rounded,filled", shape=diamond]
+  node3 [shape=record, label="{ a | b | c }"]
+
+  node1 -> node2 -> node3
+}
+....
+
+
+//
+// Slide 3: Quote Albert to make point.
+//
+== Quotes
+
+[quote, Albert Einstein]
+A person who never made a mistake never tried anything new.
+
+
+
+== Tweet
+
+// placeholder
+[#tweet]
+--
+--
+
+
+
+[%notitle]
+=== Press Release
+
+The hail-and-rainbow protocol can be initiated at three levels:
+
+. doublefootnote:[The double hail-and-rainbow level makes my toes tingle.]
+. tertiary
+. supermassively
+
+A bold statement!footnote:disclaimer[Opinions are my own.]
+
+Another outrageous statement.footnote:disclaimer[]
+
+
+
+== Font Awesome icon:font-awesome-flag[set=fab]
+
+* Version 5.13.0
+* Support icon sets (using `set` attribute)
+** *Brand:* icon:firefox[set=fab]
+** *Solid*: icon:address-book[set=fas]
+** *Regular*: icon:address-book[set=far]
+* `font-awesome-version` attribute
+
+
+
+
+[background-color="yellow"]
+== Concealed
+
+should be concealed
+
+[.columns]
+[.text-left]
+== Columns with size
+
+[.column.is-one-fifth]
+--
+[.text-left]
+* **Kotlin**
+* Java
+* Scala
+--
+
+[.column.has-text-justified]
+--
+Programming language for Android, mobile cross-platform
+and web development, server-side, native,
+and data science. Open source forever Github.
+--
+
+
+
+
+== But first first
+
+.CSV data, 15% each column
+[format="csv",width="60%",cols="4"]
+[frame="topbot",grid="none"]
+|======
+1,2,3,4
+a,b,c,d
+A,B,C,D
+|======
+
+
+
+[%notitle]
+== But first second
+
+.Multiline cells, row/col span
+|====
+|Date |Duration |Avg HR |Notes
+
+|22-Aug-08 .2+^.^|10:24 | 157 |
+Worked out MSHR (max sustainable
+heart rate) by going hard
+for this interval.
+
+|22-Aug-08 | 152 |
+Back-to-back with previous interval.
+
+|24-Aug-08 3+^|none
+
+|====
+
+
+== asdf
+
+.An example table
+[options="header,footer"]
+|=======================
+|Col 1|Col 2      |Col 3
+|1    |Item 1     |a
+|2    |Item 2     |b
+|3    |Item 3     |c
+|6    |Three items|d
+|=======================
+
+
+== But first
+
+WARNING: This presentation is dangerous!
+
+
+[.lead]
+Hello this should be
+
+larget than this.
+
+== Next is This
+
+[IMPORTANT]
+.Feeding the Werewolves
+====
+While werewolves are hardy community members, keep in mind the following dietary concerns:
+
+. They are allergic to cinnamon.
+. More than two glasses of orange juice in 24 hours makes them howl in harmony with alarms and sirens.
+. Celery makes them sad.
+====
+
+== And another
+
+[TIP, caption='ProTip(TM)']
+.Reveal.JS
+====
+Use include blocks to split your talks into small sections.
+It's easier to reorganize afterwards.
+====
+
+
+
+[.columns]
+== Columns with size
+
+[.column.is-one-third]
+--
+* **Kotlin**
+* Java
+* Scala
+--
+
+[.column,align="left"]
+--
+```javascript
+var asdf = 123.0f;
+```
+
+Python:
+[source, python]
+----
+print "Hello World"
+----
+
+--
+
+
+== !
+
+icon:heart[2x]
+
+== !
+
+icon:heart[size=5x]
+
+== !
+
+[.red]
+icon:heart[size=5x]
+
+== !
+
+icon:stackpath[size=5x,set=fab]
+
+== !
+
+icon:twitter[size=5x]
+
+== Added in 5.15.0
+
+icon:vest[size=2x]
+
+== Sets
+
+.Brand
+icon:creative-commons[size=2x,set=fab]
+
+.Regular
+icon:address-book[size=2x,set=far]
+
+.Solid
+icon:address-book[size=2x,set=fas]
