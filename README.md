@@ -28,5 +28,6 @@ bundle --path=.bundle/gems --binstubs=.bundle/.bin
 
 
 `bundle exec asciidoctor-revealjs SLIDES.adoc`
+
 `bundle exec asciidoctor-revealjs -r asciidoctor-kroki SLIDES.adoc`
 
