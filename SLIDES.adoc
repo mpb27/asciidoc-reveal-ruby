@@ -51,17 +51,31 @@ presentation's titles
 //----------------------------------------------------------------------//
 //- Slide 2 : How to create                                            -//
 //----------------------------------------------------------------------//
+[.columns]
 == Hello
 
+[.column.is-one-half]
+--
 [mermaid,abcd-flowchart,svg]
 ....
 graph TD
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+    A((aaa))-->B
+    B-->C
+    B-->D
+    class B mermaid_classA
 ....
+--
 
+[.column.is-one-half]
+--
+[mermaid,lr-flowchart,svg]
+....
+graph LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#ccf,stroke:#f66,stroke-width:2px,stroke-dasharray: 5, 5
+....
+--
 
 
 //----------------------------------------------------------------------//
